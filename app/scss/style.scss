@@ -875,6 +875,7 @@ header {
     cursor: pointer;
     position: relative;
     z-index: 350;
+    top: -6px;
   }
 
   .menu__btn-line{
@@ -931,12 +932,35 @@ header {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    transform: translateY(-100%);
-    transition: 0.3s ease;
+    transform: translateY(-150%);
+    //transition: 0.3s ease;
   }
 
-  .menu-open .menu {
+  .menu__open .menu__list {
     transform: translateY(0%);
+    //width: 100vw;
+    width: 100%;
+    height: 100vh;
+    //height: 100%;
+    transition: transform .3s;
+    display: flex;
+    flex-flow: column nowrap;
+    z-index: 1;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 22px 16px 34px 31px;
+    //margin-top: 17px;
+    margin-bottom: 0;
+    font-size: 20px;
+    list-style: none;
+  }
+
+  .menu__open .menu__list .menu__item{
+    margin-bottom: 11px;
+  }
+
+  .header__btn-logon{
+    margin-left: 10px;
   }
   //выше код для бургер-меню!!!
   
